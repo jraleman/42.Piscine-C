@@ -1,0 +1,2 @@
+ex02: find . -name "*.sh" | rev | cut -c4- | cut -d '/' -f1 | rev
+ex05: echo "42\c" (42 without newline "$")
