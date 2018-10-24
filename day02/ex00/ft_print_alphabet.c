@@ -12,11 +12,8 @@
 
 int		ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+int main()
 {
-	char	ltr;
-
-	ltr = 'a';
-	while (ltr <= 'z')
-		ft_putchar(ltr++);
+    write(1,"abcdefghijklmnopqrstuvwxyz"24);
+    return 0;
 }
