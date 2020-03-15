@@ -6,7 +6,7 @@
 /*   By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/30 21:27:38 by jaleman           #+#    #+#             */
-/*   Updated: 2017/03/30 21:27:39 by jaleman          ###   ########.fr       */
+/*   Updated: 2020/03/11 14:27:06 by ahaloua          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void		ft_putstr_non_printable(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if ((str[i] < 32 && str[i] >= 0) || str[i] == 127)
+		if ((str[i] < 32 && str[i] > 0) || str[i] == 127)
 		{
 			ft_putchar('\\');
 			if (str[i] < 16)
